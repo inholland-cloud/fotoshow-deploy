@@ -24,7 +24,3 @@ spec:
           volumeMounts:
             - name: foto-data-volume
               mountPath: /data
-      volumes:
-        - name: foto-data-volume
-          persistentVolumeClaim:
-            claimName: pvc-foto-show
