@@ -3,7 +3,7 @@ apiVersion: apps/v1
 metadata:
   name: fotoshow
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: fotoshow
@@ -24,3 +24,7 @@ spec:
           volumeMounts:
             - name: foto-data-volume
               mountPath: /data
+      volumes:
+        - name: foto-data-volume
+          persistentVolumeClaim:
+            claimName: pvc-foto-show
