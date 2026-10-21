@@ -2,7 +2,6 @@ kind: Deployment
 apiVersion: apps/v1
 metadata:
   name: fotoshow
-  namespace: paas-group3-showcase
 spec:
   replicas: 2
   selector:
