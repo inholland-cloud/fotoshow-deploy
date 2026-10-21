@@ -7,9 +7,7 @@ metadata:
     app.kubernetes.io/component: fotoshow
     app.kubernetes.io/instance: fotoshow
     app.kubernetes.io/name: fotoshow
-  annotations:
 spec:
-  host: fotoshow-romyenmeryamzijndebeste-group3.apps.inholland-minor.openshift.eu
   to:
     kind: Service
     name: fotoshow
