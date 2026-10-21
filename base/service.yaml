@@ -2,7 +2,6 @@ kind: Service
 apiVersion: v1
 metadata:
   name: fotoshow
-  namespace: namespace: paas-group3-showcase
   labels:
     app: fotoshow
     app.kubernetes.io/component: fotoshow
